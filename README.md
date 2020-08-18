@@ -1,7 +1,7 @@
 # articulate
  The official repo of the articulate programming language!
 
-articulate language is a multiple dispatch, jit compiled and homoicoinic language.
+articulate language is a multiple dispatch, jit compiled and homoiconic language.
 It allows dispatch on expressions, which leads to full code reinterpretation based on type.
 
 Example:
@@ -34,5 +34,4 @@ The following do different things:
 foo cuda-array
 
 foo multi-threaded-array
-
 ```
