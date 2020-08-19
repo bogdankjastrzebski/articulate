@@ -55,7 +55,7 @@ Explanation of the code above:
 When pr is called, its first argument "foo" is undefined and so, it has the arity of 0. () is one list or arguments. "{" appears and it simply quotes the next thing.
 This next thing is "parallel" defined previously. parallel takes its arguments - elem, arr and body and last logical element - the rest of the code, as it doesn't return anything. The rest of the code is return. return takes sum, which takes 1 argument, and "}", which has arity of 0. Here, finally, "{" terminates.
 
-Three things taken at this point by the "pr" expression are: name "foo", list of arguments and "{". The fourth thing will by the code following it, in which we can use "foo". procedure.
+Three things taken at this point by the "pr" expression are: name "foo", list of arguments and "{". The fourth thing will by the code following it, in which we can use "foo" procedure.
 
 In articulate functions are functional, we don't allow any side effects. "functions" in computer science sense are called here "procedures". 
 
