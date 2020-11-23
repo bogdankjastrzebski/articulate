@@ -1,0 +1,14 @@
+
+eval expr let (
+eval expr __main__
+
+# ------------------------------------------------ #
+
+let foo (eval expr _foo_arg ( (eval expr x (x) _foo_arg) ) )
+
+foo 3
+
+# ------------------------------------------------ #
+
+__null__
+) (eval expr _let_var (eval expr _let_val (eval expr _let_body ( (eval expr _let_var _let_body _let_val) ))))

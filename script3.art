@@ -1,0 +1,52 @@
+
+let first (eval expr x (eval expr y x))
+let second (eval expr y (eval expr x x))
+
+# --- def --- #
+let def (
+  eval expr def-var (
+    eval expr def-arg (
+      eval expr def-body (
+        let def-var (eval expr def-arg (def-body))
+      )
+    )
+  )
+)
+
+let return ()
+let : ()
+
+
+def foo(c):
+  let d c
+  return d
+
+def bar(c):
+  return first second 3 c 1
+
+# --- Liczby --- #
+
+# Prawda i falsz #
+
+let 0 ((eval expr x (eval expr y (y) )))
+let 1 ((eval expr a (eval expr b (a) )))
+let true ((eval expr aa (eval expr bb (aa) )))
+
+let and (eval expr c (eval expr d (c d ((1)) ((0)) (0) )))
+let not (eval expr e (e (0) (1)))
+let or (eval expr f (eval expr g (not and not (f) not (g))))
+
+
+let if (
+  eval expr if-var (
+    eval expr if-then (
+      eval expr if-else (
+          if-var if-then if-else
+      )
+    )
+  )
+)
+
+let X 0
+let Y 1
+X (Y (1) (0)) (0)

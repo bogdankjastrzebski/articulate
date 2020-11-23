@@ -1,0 +1,20 @@
+
+let x 3
+let y 4
+
+let def (eval expr def_name (eval expr def_args (eval expr def_body (let def_name (eval expr def_args (def_body))))))
+let return (eval expr return_next (return_next))
+let var (eval expr var_name (eval expr var_val (eval expr var_next ( (eval expr var_name var_next var_val) ))))
+
+
+
+def :(x)
+  return x
+
+def foo(x):
+  return x
+
+def bar(x):
+  return foo(y)
+
+bar(bar(3))
